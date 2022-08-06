@@ -148,10 +148,10 @@ class HBNBCommand(cmd.Cmd):
             else:
                 line = [str(obj) for key, obj in storage.all().items()
                         if type(obj).__name__ == words[0]]
-                print(l)
+                print(line)
         else:
             line = [str(obj) for key, obj in storage.all().items()]
-            print(l)
+            print(line)
 
     def do_count(self, line):
         """Counts the instances of a class.
